@@ -3,6 +3,9 @@ using System.Collections;
 
 public class PlaceHolderScript : MonoBehaviour {
 
+	public float distanceAway;
+	public int right = 1;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -10,6 +13,8 @@ public class PlaceHolderScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		Vector3 PlayerPos =  GameObject.Find ("BasePerson").transform.position;
+
+		transform.position = new Vector3 (PlayerPos.x + distanceAway * right, PlayerPos.y, PlayerPos.z);
 	}
 }

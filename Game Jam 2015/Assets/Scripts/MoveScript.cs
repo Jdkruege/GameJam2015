@@ -17,16 +17,10 @@ public class MoveScript : MonoBehaviour {
 	
 		if (Input.GetKeyDown (KeyCode.E)) {
 
-			if(isPast)
-			{
-				GameObject.Find("FutureSideEntities").SetActive(true);
-				//GameObject.Find("PastSideEntities").SetActive(false);
-			}
-			else
-			{
-				GameObject.Find("PastSideEntities").SetActive(true);
-				//GameObject.Find("FutureSideEntities").SetActive(false);
-			}
+			Vector3 holderLoc = GameObject.Find("PlayerTimeHolder").transform.position;
+			GameObject.Find("PlayerTimeHolder").transform.position = transform.position;
+			transform.position = holderLoc;
+			GameObject.Find("PlayerTimeHolder").GetComponent<PlaceHolderScript>().right *= -1;
 		} 
         float moveHoriz = Input.GetAxis("Horizontal");
         
