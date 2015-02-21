@@ -1,6 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlaceHolderScript.cs">
+    <Files>
+      <File FileName="Assets\Scripts\BreakScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\MoveScript.cs" Line="25" Column="3" />
+      <File FileName="Assets\Scripts\PlaceHolderScript.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

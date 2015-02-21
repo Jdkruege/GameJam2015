@@ -4,6 +4,8 @@ using System.Collections;
 public class MoveScript : MonoBehaviour {
 
 	private bool hasJumped = false;
+	private bool lookingleft = false;
+	public bool isPast;
 
 	// Use this for initialization
 	void Start () {
@@ -12,6 +14,20 @@ public class MoveScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+	
+		if (Input.GetKeyDown (KeyCode.E)) {
+
+			if(isPast)
+			{
+				GameObject.Find("FutureSideEntities").SetActive(true);
+				//GameObject.Find("PastSideEntities").SetActive(false);
+			}
+			else
+			{
+				GameObject.Find("PastSideEntities").SetActive(true);
+				//GameObject.Find("FutureSideEntities").SetActive(false);
+			}
+		} 
         float moveHoriz = Input.GetAxis("Horizontal");
         
         if (Input.GetKeyDown (KeyCode.Space) && !hasJumped) {
@@ -27,6 +43,16 @@ public class MoveScript : MonoBehaviour {
 			hasJumped = false;
 		}
 
+		if (moveHoriz < 0 && !lookingleft)
+		{
+			transform.Rotate(new Vector3(0, 180, 0));
+			lookingleft = true;
+		}
+		if (moveHoriz > 0 && lookingleft)
+		{
+			transform.Rotate(new Vector3(0, 180, 0));
+			lookingleft = false;
+		}
 
 	}
 }
