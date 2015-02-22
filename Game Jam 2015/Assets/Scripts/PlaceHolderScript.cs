@@ -13,7 +13,7 @@ public class PlaceHolderScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Vector3 PlayerPos =  GameObject.Find ("BasePerson").transform.position;
+		Vector3 PlayerPos =  GameObject.Find ("Character").transform.position;
 
 		transform.position = new Vector3 (PlayerPos.x + distanceAway * right, PlayerPos.y, PlayerPos.z);
 	}

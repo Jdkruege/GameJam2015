@@ -13,7 +13,7 @@ public class FollowScript : MonoBehaviour {
 	// Update is called once per frame
     void Update(){
 
-        Vector3 PlayerPOS = GameObject.Find("BasePerson").transform.position;
+        Vector3 PlayerPOS = GameObject.Find("Character").transform.position;
         transform.position = new Vector3(PlayerPOS.x, PlayerPOS.y, PlayerPOS.z - distanceAway);
 		}
 }

@@ -49,7 +49,12 @@
      <Compile Include="Assets\Scripts\BreakScript.cs" />
      <Compile Include="Assets\Scripts\FollowScript.cs" />
      <Compile Include="Assets\Scripts\MoveScript.cs" />
+     <Compile Include="Assets\Scripts\OpenScript.cs" />
      <Compile Include="Assets\Scripts\PlaceHolderScript.cs" />
+     <Compile Include="Assets\Scripts\ScoreScript.cs" />
+     <Compile Include="Assets\Scripts\TimeScript.cs" />
+     <Compile Include="Assets\Scripts\ValuablesPickupScript.cs" />
+     <Compile Include="Assets\Scripts\WinScript.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
  </Reference>

@@ -1,0 +1,113 @@
+fileFormatVersion: 2
+guid: a3c82772e7dcbf4479720aa2efdfb271
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Head
+    21300002: Torso
+    21300004: Back Arm
+    21300006: Front Arm
+    21300008: Back Leg
+    21300010: Front Leg
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Head
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 286
+        width: 100
+        height: 96
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Torso
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 276
+        width: 42
+        height: 100
+      alignment: 9
+      pivot: {x: .481456578, y: .655759275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Back Arm
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 154
+        width: 35
+        height: 99
+      alignment: 9
+      pivot: {x: .480077595, y: .845126808}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Front Arm
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 154
+        width: 35
+        height: 100
+      alignment: 9
+      pivot: {x: .500000238, y: .862594604}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Back Leg
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 58
+        height: 100
+      alignment: 9
+      pivot: {x: .432862192, y: .858246684}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Front Leg
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 7
+        width: 58
+        height: 100
+      alignment: 9
+      pivot: {x: .432861865, y: .889398575}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

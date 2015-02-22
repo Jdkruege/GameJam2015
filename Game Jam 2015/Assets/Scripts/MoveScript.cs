@@ -7,9 +7,11 @@ public class MoveScript : MonoBehaviour {
 	private bool lookingleft = false;
 	public bool isPast;
 
+	private Animator anim;
+
 	// Use this for initialization
 	void Start () {
-	
+		anim = GetComponent<Animator> ();
 	}
 	
 	// Update is called once per frame
@@ -24,6 +26,8 @@ public class MoveScript : MonoBehaviour {
 		} 
         float moveHoriz = Input.GetAxis("Horizontal");
         
+		anim.SetFloat("Speed", Mathf.Abs(moveHoriz));
+
         if (Input.GetKeyDown (KeyCode.Space) && !hasJumped) {
 			rigidbody2D.velocity = new Vector2 (moveHoriz * 2f, 5f);
 			hasJumped = true;
@@ -39,14 +43,20 @@ public class MoveScript : MonoBehaviour {
 
 		if (moveHoriz < 0 && !lookingleft)
 		{
-			transform.Rotate(new Vector3(0, 180, 0));
-			lookingleft = true;
+			FlipFacing();
 		}
 		if (moveHoriz > 0 && lookingleft)
 		{
-			transform.Rotate(new Vector3(0, 180, 0));
-			lookingleft = false;
+			FlipFacing();
 		}
 
+	}
+
+	private void FlipFacing()
+	{
+		lookingleft = !lookingleft;
+		Vector3 charScale = transform.localScale;
+		charScale.x *= -1;
+		transform.localScale = charScale;
 	}
 }
