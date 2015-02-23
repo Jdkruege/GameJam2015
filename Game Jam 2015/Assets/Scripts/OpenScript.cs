@@ -4,7 +4,8 @@ using System.Collections;
 public class OpenScript : MonoBehaviour {
 
 		private bool flipped = false;
-	public Sprite sprite;
+		public Sprite sprite;
+		public string objectToDestoy;
 		
 		void OnTriggerEnter2D()
 		{
@@ -17,6 +18,7 @@ public class OpenScript : MonoBehaviour {
 				flipped = true;
 			}
 		GameObject.Find ("Shut").GetComponent<SpriteRenderer>().sprite = sprite;
+		Destroy (GameObject.Find (objectToDestoy));
 
 		}
 }
